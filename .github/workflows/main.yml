@@ -36,7 +36,13 @@ jobs:
         
       - name: add r8125 extension
         run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8125/rpext-index.json
+      
+      - name: add raspbi-pill extension
+        run: ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/main/raspbi-pill/rpext-index.json
         
+      - name: add redpill-acpid extension
+        run: ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/rpext-index.json        
+
       - name: add vmw_pvscsi extension
         run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/vmw_pvscsi/rpext-index.json
         
