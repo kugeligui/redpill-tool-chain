@@ -25,6 +25,18 @@ jobs:
       - name: Chmod
         run: chmod 0755 ./redpill_tool_chain.sh
         
+      - name: add redpill extension
+        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/redpill/rpext-index.json
+        
+      - name: add redpill-boot-wait extension
+        run: ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/main/redpill-boot-wait/rpext-index.json
+        
+      - name: add r8101 extension
+        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8101/rpext-index.json
+        
+      - name: add r8125 extension
+        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8125/rpext-index.json
+        
       - name: add vmw_pvscsi extension
         run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/vmw_pvscsi/rpext-index.json
         
