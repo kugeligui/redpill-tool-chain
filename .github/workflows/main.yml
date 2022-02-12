@@ -25,8 +25,11 @@ jobs:
       - name: Chmod
         run: chmod 0755 ./redpill_tool_chain.sh
         
-      - name: add extension
-        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8125/rpext-index.json
+      - name: add vmw_pvscsi extension
+        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/vmw_pvscsi/rpext-index.json
+        
+      - name: add vmxnet3 extension
+        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/vmxnet3/rpext-index.json
 
       - name: Build docker image
         run: ./redpill_tool_chain.sh build bromolow-7.0.1-42218
