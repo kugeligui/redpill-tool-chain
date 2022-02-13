@@ -27,6 +27,9 @@ jobs:
 
       - name: add e1000 extension
         run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000/rpext-index.json
+
+      - name: add aic94xx extension
+        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/aic94xx/rpext-index.json
         
       - name: add redpill extension
         run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/redpill/rpext-index.json
