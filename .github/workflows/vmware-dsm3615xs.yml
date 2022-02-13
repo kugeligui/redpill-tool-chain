@@ -28,11 +28,8 @@ jobs:
       - name: add e1000 extension
         run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000/rpext-index.json
 
-      - name: add aic94xx extension
-        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/aic94xx/rpext-index.json
-        
-      - name: add redpill extension
-        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/redpill/rpext-index.json
+      - name: add virtio extension
+        run: ./redpill_tool_chain.sh add https://raw.githubusercontent.com/RedPill-TTG/redpill-virtio/master/rpext-index.json
         
       - name: add redpill-boot-wait extension
         run: ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/raw/main/redpill-boot-wait/rpext-index.json
